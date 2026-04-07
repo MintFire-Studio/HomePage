@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MintFire Studio | Crafting Impactful Mobile Experiences</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        h1, h2, h3 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .asymmetric-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#ffffff",
+                    "primary-fixed": "#86f8c8",
+                    "on-error": "#ffffff",
+                    "primary-fixed-dim": "#69dbad",
+                    "on-background": "#1c1b1b",
+                    "primary-container": "#3eb489",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#d1e4fb",
+                    "secondary-container": "#cfe2f9",
+                    "on-secondary-container": "#526478",
+                    "surface-container-high": "#ebe7e7",
+                    "secondary-fixed-dim": "#b5c8df",
+                    "secondary": "#4e6073",
+                    "on-secondary-fixed": "#091d2e",
+                    "tertiary-container": "#ef817d",
+                    "inverse-primary": "#69dbad",
+                    "primary": "#006c4d",
+                    "on-error-container": "#93000a",
+                    "on-primary-container": "#00402d",
+                    "on-tertiary-fixed-variant": "#7e2a2a",
+                    "on-tertiary-container": "#691b1c",
+                    "background": "#fcf9f8",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-bright": "#fcf9f8",
+                    "surface-variant": "#e5e2e1",
+                    "surface-container": "#f0edec",
+                    "error": "#ba1a1a",
+                    "on-surface": "#1c1b1b",
+                    "on-primary-fixed": "#002115",
+                    "outline-variant": "#bccac1",
+                    "on-surface-variant": "#3d4943",
+                    "tertiary": "#9c413f",
+                    "tertiary-fixed": "#ffdad7",
+                    "surface-dim": "#dcd9d9",
+                    "surface": "#fcf9f8",
+                    "on-secondary-fixed-variant": "#36485b",
+                    "surface-container-highest": "#e5e2e1",
+                    "surface-container-low": "#f6f3f2",
+                    "outline": "#6d7a72",
+                    "inverse-surface": "#313030",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed-variant": "#005139",
+                    "on-tertiary-fixed": "#410005",
+                    "surface-tint": "#006c4d",
+                    "inverse-on-surface": "#f3f0ef",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb3af"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed-dim">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-[#fcf9f8]/80 backdrop-blur-xl transition-all">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="text-xl font-bold tracking-tighter text-[#1c1b1b] font-['Plus_Jakarta_Sans']">
+                MintFire Studio
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#006c4d] font-semibold border-b-2 border-[#006c4d] pb-1 transition-all" href="#portfolio">Portfolio</a>
+<a class="text-[#1c1b1b]/70 hover:text-[#006c4d] transition-colors" href="#services">Services</a>
+<a class="text-[#1c1b1b]/70 hover:text-[#006c4d] transition-colors" href="#process">Process</a>
+<a class="text-[#1c1b1b]/70 hover:text-[#006c4d] transition-colors" href="#contact">Contact</a>
+</div>
+<button class="bg-primary hover:bg-primary-container text-on-primary px-6 py-2.5 rounded-full font-bold transition-all scale-100 active:scale-95 duration-200">
+                Start Project
+            </button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section: Intentional Asymmetry -->
+<section class="relative min-h-[870px] flex items-center px-8 overflow-hidden bg-surface">
+<div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 z-10">
+<span class="inline-block px-4 py-1.5 rounded-full bg-primary-fixed-dim/20 text-on-primary-container text-sm font-bold tracking-widest uppercase mb-6">
+                        Solo Boutique Studio
+                    </span>
+<h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter leading-[0.9] text-on-surface mb-8">
+                        Crafting <br/> <span class="text-primary italic">Impactful</span> <br/> Mobile Art.
+                    </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl mb-10 leading-relaxed font-body">
+                        MintFire Studio is a solo venture by a dedicated developer turning complex ideas into minimalist, high-performance mobile experiences. We don't just build apps; we architect digital legacies.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a class="px-8 py-4 bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-full font-bold text-lg shadow-lg shadow-primary/10 transition-transform hover:-translate-y-1 active:translate-y-0" href="#portfolio">
+                            View My Apps
+                        </a>
+<a class="px-8 py-4 border border-outline-variant/30 text-primary rounded-full font-bold text-lg hover:bg-surface-container-low transition-colors" href="#contact">
+                            Let's Talk
+                        </a>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-[3rem] overflow-hidden rotate-3 shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Modern minimalist home office setup with sleek desk, laptop showing code, and architectural mint green accents in a bright sunlit room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3vwK6bg2EkxSJmeW3z7JlKB2O9rVjmQXiThWC5QhheO_hxbShK6p2xlQkwdHvlMz2Dx_ao14NM8IE6eJ9jP49WudHgwQdUxmcKZ45wM1eskzVXyxhDCl8w82qZLiMAgdv2ua5k9PmxQ7ZZ-5pFdIbt8ggKmNe_FKotgWUEsu_uJnjaoztAn6sPbyWsOBtlnBIioIwzph1Sc7dSOIcDBEz1jOwYDP8pVbd5qNR2WWSSuPjsZ9osBL4hragr-gjdmJSVXB76l77WGg"/>
+</div>
+<div class="absolute -bottom-8 -left-8 p-8 bg-surface-container-lowest rounded-3xl shadow-xl border border-outline-variant/10 max-w-[240px]">
+<p class="text-3xl font-bold text-primary mb-1">100%</p>
+<p class="text-sm text-on-surface-variant leading-tight">Focus on craftsmanship and clean, architectural code.</p>
+</div>
+</div>
+</div>
+<!-- Decorative Background Element -->
+<div class="absolute top-1/4 -right-20 w-96 h-96 bg-primary-fixed-dim/10 rounded-full blur-3xl -z-10"></div>
+</section>
+<!-- Portfolio: Bento Grid Layout -->
+<section class="py-24 px-8 bg-surface-container-low" id="portfolio">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">Curated Apps</h2>
+<p class="text-on-surface-variant text-lg">A selection of mobile experiences built with performance and aesthetics at the core.</p>
+</div>
+<div class="h-px flex-grow bg-outline-variant/20 mx-8 hidden md:block"></div>
+<span class="text-primary font-bold text-sm tracking-widest uppercase">Portfolio 2024</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Portfolio Card 1 -->
+<div class="group bg-surface-container-lowest p-8 rounded-xl transition-all duration-300 hover:shadow-xl border border-transparent hover:border-primary-fixed-dim/20">
+<div class="w-16 h-16 rounded-2xl bg-secondary-container flex items-center justify-center mb-6 text-on-secondary-container">
+<span class="material-symbols-outlined text-3xl" data-icon="fitness_center">fitness_center</span>
+</div>
+<span class="text-xs font-bold text-primary tracking-widest uppercase mb-2 block">Fitness &amp; Health</span>
+<h3 class="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">Kinetix Pro</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">A high-performance workout tracker emphasizing biometric data visualization and minimalist input methods.</p>
+<div class="flex items-center gap-2 text-sm font-bold text-primary">
+                            Explore Project <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<!-- Portfolio Card 2 -->
+<div class="group bg-surface-container-lowest p-8 rounded-xl transition-all duration-300 hover:shadow-xl border border-transparent hover:border-primary-fixed-dim/20">
+<div class="w-16 h-16 rounded-2xl bg-primary-container flex items-center justify-center mb-6 text-on-primary-container">
+<span class="material-symbols-outlined text-3xl" data-icon="edit_calendar">edit_calendar</span>
+</div>
+<span class="text-xs font-bold text-primary tracking-widest uppercase mb-2 block">Productivity</span>
+<h3 class="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">Zen Habit</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">A minimalist habit builder that uses psychological triggers to build lasting routines without the digital clutter.</p>
+<div class="flex items-center gap-2 text-sm font-bold text-primary">
+                            Explore Project <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<!-- Portfolio Card 3 (Featured Wide) -->
+<div class="group bg-surface-container-lowest p-8 rounded-xl transition-all duration-300 hover:shadow-xl border border-transparent hover:border-primary-fixed-dim/20">
+<div class="w-16 h-16 rounded-2xl bg-tertiary-container flex items-center justify-center mb-6 text-on-tertiary-container">
+<span class="material-symbols-outlined text-3xl" data-icon="explore">explore</span>
+</div>
+<span class="text-xs font-bold text-primary tracking-widest uppercase mb-2 block">Travel</span>
+<h3 class="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">Locali Guide</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">An AI-powered local discovery app that curates hidden gems in metropolitan areas with architectural precision.</p>
+<div class="flex items-center gap-2 text-sm font-bold text-primary">
+                            Explore Project <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section: Tonal Depth Layering -->
+<section class="py-24 px-8 bg-surface" id="services">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="bg-surface-container-high rounded-[2.5rem] p-4">
+<img class="rounded-[2rem] w-full object-cover aspect-video shadow-lg" data-alt="Clean software code on a dark screen with vibrant mint green syntax highlighting and elegant typography in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuActMqgp6DyvNyRvSiVzUdgD8BZlE6_a8luXzWXmOC1uOwvZd8VKb3BTSkmiPCCh7zs976zFrSabQEaPA022l4-g5JIiQCk8haiek3T6yz0so2V0L31tX53UL6SK_l5GhHKj467VZzedfk7RK_V5PsdKLfeftyW5IoDCuOdT5V99CsQialDp5EoCjY84rqvbuhWsBv2vqjq3Pq-m0-z18p8z9EoXaS5n9DHBO_BDS19hlCHVIezGtf5hWar5YZINAQrQtBQMgMhlvA"/>
+</div>
+<!-- Floating Glass Card -->
+<div class="absolute -bottom-10 -right-6 p-6 bg-surface-container-lowest/80 backdrop-blur-xl rounded-2xl shadow-xl border border-outline-variant/20 max-w-[280px]">
+<div class="flex gap-4 items-center">
+<div class="bg-primary w-10 h-10 rounded-full flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<p class="font-bold text-sm">Rapid Flutter Prototyping</p>
+</div>
+</div>
+</div>
+<div>
+<h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-8">Engineering Digital Art</h2>
+<div class="space-y-8">
+<div class="flex gap-6 group">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="flutter">flutter</span>
+<div>
+<h4 class="text-xl font-bold mb-2">Flutter Development</h4>
+<p class="text-on-surface-variant leading-relaxed">Cross-platform excellence with a single codebase. I build lightning-fast, native-feeling apps for iOS and Android.</p>
+</div>
+</div>
+<div class="flex gap-6 group">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="palette">palette</span>
+<div>
+<h4 class="text-xl font-bold mb-2">UI/UX Design</h4>
+<p class="text-on-surface-variant leading-relaxed">Modern, clean interfaces following Material 3 guidelines. I prioritize accessibility and emotional design.</p>
+</div>
+</div>
+<div class="flex gap-6 group">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="rocket_launch">rocket_launch</span>
+<div>
+<h4 class="text-xl font-bold mb-2">Full-Cycle Deployment</h4>
+<p class="text-on-surface-variant leading-relaxed">From initial concept to Google Play and App Store submission. I handle the technical complexity of launch.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-24 px-8 bg-surface-container-high/30" id="contact">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-8">Ready to ignite your idea?</h2>
+<p class="text-xl text-on-surface-variant mb-12 max-w-2xl mx-auto leading-relaxed">
+                    I'm currently accepting new projects for Q4 2024. Let's build something that stands out in the crowded app market.
+                </p>
+<div class="flex flex-col items-center gap-8">
+<a class="text-3xl md:text-4xl font-bold text-primary hover:underline underline-offset-8 transition-all" href="mailto:hello@mintfire.studio">
+                        hello@mintfire.studio
+                    </a>
+<div class="flex gap-6 mt-4">
+<a class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all duration-300 shadow-sm" href="#">
+<span class="material-symbols-outlined">link</span>
+</a>
+<a class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all duration-300 shadow-sm" href="#">
+<span class="material-symbols-outlined">code</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 border-t border-[#bccac1]/20 bg-[#f6f3f2]">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-8 gap-6 font-['Manrope'] text-sm tracking-wide">
+<div class="text-lg font-extrabold text-[#1c1b1b]">MintFire Studio</div>
+<div class="text-[#1c1b1b]/60">© 2024 MintFire Studio. Crafted with Architectural Mint.</div>
+<div class="flex gap-6">
+<a class="text-[#1c1b1b]/60 hover:text-[#006c4d] transition-colors" href="#">Privacy Policy</a>
+<a class="text-[#1c1b1b]/60 hover:text-[#006c4d] transition-colors" href="#">Terms of Service</a>
+<a class="text-[#1c1b1b]/60 hover:text-[#006c4d] transition-colors" href="#">LinkedIn</a>
+<a class="text-[#1c1b1b]/60 hover:text-[#006c4d] transition-colors" href="#">GitHub</a>
+</div>
+</div>
+</footer>
+</body></html>
